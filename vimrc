@@ -14,9 +14,9 @@ set list
 set encoding=utf-8
 set shiftwidth=2
 
-" Set leader to comma.
-let mapleader = ","
-let maplocalleader = ","
+" Set leader to space.
+let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
 
 " Don't redraw screen while executing macros.
 set nolazyredraw
