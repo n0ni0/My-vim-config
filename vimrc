@@ -96,7 +96,22 @@ endtry
 syntax on
 set bg=dark
 
+
 nnoremap <C-L> :%s/\s*$//g<CR>
+
+" set <Space>w to save file 
+nnoremap <Leader>w :w<CR>
+
+" set <Space>q to quit file 
+nnoremap <Leader>q :q<CR>
+
+
+" enter visual line mode with <Space><Space>
+nmap <Leader><Leader> V
+
+" on nerdtree, moves between tree and file
+nnoremap <Leader>ww <C-w>w
+
 
 set vb t_vb=
 
