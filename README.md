@@ -47,9 +47,6 @@ Highlights indent levels.
 ### Bundle 'jiangmiao/auto-pairs'
 Insert or delete brackets, parens, quotes in pair.
 
-### Bundle 'Valloric/YouCompleteMe' 
-YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine
-
 ### Bundle 'Lokaltog/powerline'
 Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, tmux, IPython, Awesome and Qtile
 
@@ -58,4 +55,9 @@ Supports Twig PHP templates
 
 ### Bundle 'docteurklein/vim-symfony'
 A vim plugin to handle symfony and all that stuff
+
+### Bundle 'arnaud-lb/vim-php-namespace'
+A vim plugin for inserting "use" statements automatically.
+(you need ctags to use this plugin)
+
 
