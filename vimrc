@@ -157,7 +157,6 @@ Bundle 'beyondwords/vim-twig'
 Bundle 'bling/vim-airline'
 Bundle 'Lokaltog/powerline'
 Bundle 'jiangmiao/auto-pairs'
-Bundle 'arnaud-lb/vim-php-namespace'
 
 " vim-scripts repos
 Bundle 'L9'
@@ -274,7 +273,3 @@ if !exists('g:airline_symbols')
   let g:airline_symbols.paste = 'Þ'
   let g:airline_symbols.paste = '∥'
   let g:airline_symbols.whitespace = 'Ξ'
-
-"php-namespace config
-inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
-noremap <Leader>e :call PhpExpandClass()<CR>
