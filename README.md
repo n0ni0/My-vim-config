@@ -56,8 +56,3 @@ Supports Twig PHP templates
 ### Bundle 'docteurklein/vim-symfony'
 A vim plugin to handle symfony and all that stuff
 
-### Bundle 'arnaud-lb/vim-php-namespace'
-A vim plugin for inserting "use" statements automatically.
-(you need ctags to use this plugin)
-
-
