@@ -6,7 +6,7 @@ This config is based on [FPerezP](https://github.com/FPerezP) config, with some 
 
 ```git
 git clone git@github.com:n0ni0/My-vim-config.git ~/.vim
-git clone git@github.com:gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 mkdir ~/.vim/_temp
 mkdir ~/.vim/_backup
