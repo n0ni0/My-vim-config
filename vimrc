@@ -278,7 +278,3 @@ if !exists('g:airline_symbols')
   let g:airline_symbols.paste = 'Þ'
   let g:airline_symbols.paste = '∥'
   let g:airline_symbols.whitespace = 'Ξ'
-
-  syntax enable
-  set background=dark
-  colorscheme solarized
