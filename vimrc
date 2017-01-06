@@ -131,41 +131,42 @@ map <S-f> :execute ":!"g:symfony_enable_shell_cmd<CR>
 set nocompatible               " be iMproved
 filetype off                   " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+ set rtp+=~/.vim/bundle/Vundle.vim
+ call vundle#begin()
 
 " let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" required!
+Plugin 'vundleVim/vundle.vim'
 
 " My Bundles here:
 " original repos on github
-Bundle 'docteurklein/vim-symfony'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'sumpygump/php-documentor-vim'
-Bundle 'joestelmach/lint.vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle "tomtom/tlib_vim"
-Bundle "honza/vim-snippets"
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'beyondwords/vim-twig'
-Bundle 'bling/vim-airline'
-Bundle 'Lokaltog/powerline'
-Bundle 'jiangmiao/auto-pairs'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'sumpygump/php-documentor-vim'
+Plugin 'joestelmach/lint.vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'beyondwords/vim-twig'
+Plugin 'bling/vim-airline'
+Plugin 'Lokaltog/powerline'
+Plugin 'jiangmiao/auto-pairs'
 
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
 
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'Lokaltog/vim-easymotion'
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
+
+call vundle#end()
 
 filetype plugin indent on     " required!
 " Brief help
@@ -243,8 +244,12 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1 
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 set nocompatible
+
+"Colorscheme
 set t_Co=256
-colors molokai
+let g:rehash256 = 1
+let g:molokai_original = 1
+colorscheme molokai
 
 " Symfony configuration
 let g:symfony_app_console_caller= "php"
@@ -273,3 +278,7 @@ if !exists('g:airline_symbols')
   let g:airline_symbols.paste = 'Þ'
   let g:airline_symbols.paste = '∥'
   let g:airline_symbols.whitespace = 'Ξ'
+
+  syntax enable
+  set background=dark
+  colorscheme solarized
